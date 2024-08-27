@@ -71,10 +71,53 @@ let swiperHome = new Swiper('.home__swiper', {
 });
 
 /*=============== FEATURED SWIPER ===============*/
+let swiperFeatured = new Swiper('.featured__swiper', {
+  loop: true,
+  spaceBetween: 16,
+  grabCursor: true,
+  slidesPerView: 'auto',
+  centeredSlides: 'auto',
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    1150: {
+      spacePerView: 4,
+      centeredSlides: false,
+    },
+  },
+});
 
 /*=============== NEW SWIPER ===============*/
+let swiperNew = new Swiper('.new__swiper', {
+  loop: true,
+  spaceBetween: 16,
+  slidesPerView: 'auto',
 
+  breakpoints: {
+    1150: {
+      spacePerView: 3,
+    },
+  },
+});
 /*=============== TESTIMONIAL SWIPER ===============*/
+let swiperTestimonial = new Swiper('.testimonial__swiper', {
+  loop: true,
+  spaceBetween: 16,
+  grabCursor: true,
+  slidesPerView: 'auto',
+  centeredSlides: 'auto',
+
+  breakpoints: {
+    1150: {
+      slidesPerView: 3,
+      centeredSlides: 'false',
+    },
+  },
+});
 
 /*=============== SHOW SCROLL UP ===============*/
 
